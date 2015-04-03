@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FragmentNavigationDrawerTest</string>
+    <string name="action_settings">Settings</string>
+    <string name="main">This is the FragmentNavigationDrawerActivity!</string>
+    <string name="first">This is the first fragment!</string>
+    <string name="second">This is the second fragment!</string>
+    <string-array name="fragments_names_array">
+        <item>First</item>
+        <item>Second</item>
+    </string-array>
+
+</resources>
