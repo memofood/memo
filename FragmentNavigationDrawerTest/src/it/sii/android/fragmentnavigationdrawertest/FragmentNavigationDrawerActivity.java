@@ -16,6 +16,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
 public class FragmentNavigationDrawerActivity extends FragmentActivity {
@@ -53,8 +54,10 @@ public class FragmentNavigationDrawerActivity extends FragmentActivity {
 		Log.d("fabry","pos="+position);
 		if(position==0) // First
 			fragment = new FirstFragment();
-		else if(position==1) // First
+		else if(position==1) // Second
 			fragment = new SecondFragment();
+		else if(position==2) // Third
+			fragment = new ThirdFragment();
 		FragmentManager fragmentManager = getSupportFragmentManager();
 	    fragmentManager.beginTransaction()
 	                   .replace(R.id.content_frame, fragment)
@@ -81,5 +84,22 @@ public class FragmentNavigationDrawerActivity extends FragmentActivity {
 		     return inflater.inflate(R.layout.second, container, false);
 	        }
 	}
+	public static class ThirdFragment extends Fragment {
+			
+		 @Override
+	        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+	                Bundle savedInstanceState) {
+		        getActivity().setContentView(R.layout.third);
+		        ViewGroup layout = (ViewGroup)getActivity().findViewById(R.id.linearLayout);
+		        for(int i =0;i<20;i++){
+		        	Button button = new Button(getActivity());
+		        	button.setText("Button_"+i);
+		        	layout.addView(button);
+		        }
+
+		     return inflater.inflate(R.layout.third, container, false);
+	        }
+	  }
+
 }
  
