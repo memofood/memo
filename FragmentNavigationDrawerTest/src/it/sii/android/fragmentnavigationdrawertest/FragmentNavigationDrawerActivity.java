@@ -17,7 +17,10 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.TextView;
 
 public class FragmentNavigationDrawerActivity extends FragmentActivity {
 
@@ -89,9 +92,86 @@ public class FragmentNavigationDrawerActivity extends FragmentActivity {
 		 @Override
 	        public View onCreateView(LayoutInflater inflater, ViewGroup container,
 	                Bundle savedInstanceState) {
+			 
+			 
+			 
+			 View Third=(View) inflater.inflate(R.layout.third, container, false);
+			 
+			  Button banana=(Button) Third.findViewById(R.id.button1);
+			  Button banana2=(Button) Third.findViewById(R.id.button2);
+			  Button banana3=(Button) Third.findViewById(R.id.button3);
+			  
+			  banana.setOnClickListener(new View.OnClickListener() {
+			        @Override
+			        public void onClick(View Third) {
+			        	
+			        	ImageView image=(ImageView) getActivity().findViewById(R.id.categoria);
+			        	TextView text1=(TextView) getActivity().findViewById(R.id.nome_categoria);
+			        	TextView text2=(TextView) getActivity().findViewById(R.id.descrizione);
+			        	
+			        	if(image.getVisibility()==android.view.View.VISIBLE){
+			        		
+			        		image.setVisibility(android.view.View.GONE);
+			        		text1.setVisibility(android.view.View.GONE);
+			        		text2.setVisibility(android.view.View.GONE);
+			        	}
+			        	else{
+			        		image.setVisibility(android.view.View.VISIBLE);
+			        		text1.setVisibility(android.view.View.VISIBLE);
+			        		text2.setVisibility(android.view.View.VISIBLE);	
+			        	}
+			        }
+			    });
+			  
+			  banana2.setOnClickListener(new View.OnClickListener() {
+			        @Override
+			        public void onClick(View Third) {
+			        	
+			        	ImageView image=(ImageView) getActivity().findViewById(R.id.categoria2);
+			        	TextView text1=(TextView) getActivity().findViewById(R.id.nome_categoria2);
+			        	TextView text2=(TextView) getActivity().findViewById(R.id.descrizione2);
+			        	
+			        	if(image.getVisibility()==android.view.View.VISIBLE){
+			        		
+			        		image.setVisibility(android.view.View.GONE);
+			        		text1.setVisibility(android.view.View.GONE);
+			        		text2.setVisibility(android.view.View.GONE);
+			        	}
+			        	else{
+			        		image.setVisibility(android.view.View.VISIBLE);
+			        		text1.setVisibility(android.view.View.VISIBLE);
+			        		text2.setVisibility(android.view.View.VISIBLE);	
+			        	}
+			        }
+			    });
+			  
+			  banana3.setOnClickListener(new View.OnClickListener() {
+			        @Override
+			        public void onClick(View Third) {
+			        	
+			        	ImageView image=(ImageView) getActivity().findViewById(R.id.categoria3);
+			        	TextView text1=(TextView) getActivity().findViewById(R.id.nome_categoria3);
+			        	TextView text2=(TextView) getActivity().findViewById(R.id.descrizione3);
+			        	
+			        	if(image.getVisibility()==android.view.View.VISIBLE){
+			        		
+			        		image.setVisibility(android.view.View.GONE);
+			        		text1.setVisibility(android.view.View.GONE);
+			        		text2.setVisibility(android.view.View.GONE);
+			        	}
+			        	else{
+			        		image.setVisibility(android.view.View.VISIBLE);
+			        		text1.setVisibility(android.view.View.VISIBLE);
+			        		text2.setVisibility(android.view.View.VISIBLE);	
+			        	}
+			        }
+			    });
 
-		     return inflater.inflate(R.layout.third, container, false);
+		     return Third;
 	        }
+		 
+		 
+		 
 	  }
 
 }

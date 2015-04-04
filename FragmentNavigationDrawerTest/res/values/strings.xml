@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Memofood</string>
+    <string name="app_name">MemoFood</string>
     <string name="action_settings">Settings</string>
     <string name="main">This is the FragmentNavigationDrawerActivity!</string>
     <string name="first">This is the first fragment!</string>
     <string name="second">This is the second fragment!</string>
+        <string name="third">This is the third fragment!</string>
     <string-array name="fragments_names_array">
         <item>First</item>
         <item>Second</item>
         <item>Third</item>
     </string-array>
+    
+    
+    <string name="hello">Hello World, SimpleAdapterTestActivity!</string>
+	<string name="firstname_label">Firstname:</string>
+	<string name="lastname_label">Lastname:</string>
+	
+	<string name="breve_descrizione">La banana è un frutto e proviene dal banano, pesa tipicamente fra i 100-200gr ed è ricca di potassio</string>
 
 </resources>
