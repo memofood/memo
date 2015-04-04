@@ -89,13 +89,6 @@ public class FragmentNavigationDrawerActivity extends FragmentActivity {
 		 @Override
 	        public View onCreateView(LayoutInflater inflater, ViewGroup container,
 	                Bundle savedInstanceState) {
-		        getActivity().setContentView(R.layout.third);
-		        ViewGroup layout = (ViewGroup)getActivity().findViewById(R.id.linearLayout);
-		        for(int i =0;i<20;i++){
-		        	Button button = new Button(getActivity());
-		        	button.setText("Button_"+i);
-		        	layout.addView(button);
-		        }
 
 		     return inflater.inflate(R.layout.third, container, false);
 	        }
